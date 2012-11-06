@@ -2,8 +2,8 @@ This repo is a bootstrap vagrant-based project using Node.js and MongoDB.
 
 By default, it uses the precise32 vagrant base box. To start your project, complete the following steps:
 
-* Download and install vagrant, if you haven't already (http://downloads.vagrantup.com/)
-    
+*Download and install vagrant, if you haven't already (http://downloads.vagrantup.com/)
+
     vagrant box add base http://files.vagrantup.com/precise32.box
     git clone https://github.com/cacois/vagrant-node-mongo.git
     cd vagrant-node-mongo
