@@ -10,10 +10,11 @@ Vagrant::Config.run do |config|
   config.vm.customize ["modifyvm", :id, "--memory", 512]
 
   config.vm.provision :chef_solo do |chef|
+    chef.cookbooks_path = "cookbooks"
     chef.add_recipe "apt"
-    chef.add_recipe "nodejs::install_from_package"
     chef.add_recipe "mongodb"
     chef.add_recipe "build-essential"
+    chef.add_recipe "nodejs::install_from_package"
     chef.json = {
       "nodejs" => {
         "version" => "0.8.0"
