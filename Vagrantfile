@@ -5,8 +5,8 @@ Vagrant::Config.run do |config|
 
   config.vm.share_folder "app", "/home/vagrant/app", "app"
 
-  # allow for symlinks in the testapp folder
-  config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/testapp", "1"]
+  # allow for symlinks in the app folder
+  config.vm.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/app", "1"]
   config.vm.customize ["modifyvm", :id, "--memory", 512]
 
   config.vm.provision :chef_solo do |chef|
