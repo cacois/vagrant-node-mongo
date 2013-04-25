@@ -6,7 +6,7 @@ By default, it uses the precise32 vagrant base box. To start your project, compl
 
 *Download and install vagrant, if you haven't already (http://downloads.vagrantup.com/)*
 
-    vagrant box add base http://files.vagrantup.com/precise32.box
+    vagrant box add precise32 http://files.vagrantup.com/precise32.box
     git clone https://github.com/cacois/vagrant-node-mongo.git
     cd vagrant-node-mongo
     vagrant up
